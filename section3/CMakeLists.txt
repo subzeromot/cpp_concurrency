@@ -1,0 +1,31 @@
+project(section_3)
+
+add_executable(01_condition_variable 01_condition_variable.cpp)
+target_link_libraries(01_condition_variable pthread)
+
+add_executable(02_thread_safe_queue 02_thread_safe_queue.cpp)
+target_link_libraries(02_thread_safe_queue pthread)
+
+add_executable(02_thread_safe_queue_2 02_thread_safe_queue_2.cpp)
+target_link_libraries(02_thread_safe_queue_2 pthread)
+
+add_executable(03_future 03_future.cpp)
+target_link_libraries(03_future pthread)
+
+add_executable(04_wait_base_loop 04_wait_base_loop.cpp)
+target_link_libraries(04_wait_base_loop pthread)
+
+add_executable(05_parallel_accumulate_async 05_parallel_accumulate_async.cpp)
+target_link_libraries(05_parallel_accumulate_async pthread)
+
+add_executable(06_package_task 06_package_task.cpp)
+target_link_libraries(06_package_task pthread)
+
+add_executable(07_promise 07_promise.cpp)
+target_link_libraries(07_promise pthread)
+
+add_executable(08_promise_exception 08_promise_exception.cpp)
+target_link_libraries(08_promise_exception pthread)
+
+add_executable(09_share_future 09_share_future.cpp)
+target_link_libraries(09_share_future pthread)
